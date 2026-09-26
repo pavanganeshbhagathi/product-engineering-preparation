@@ -595,37 +595,38 @@ Interview
 
 ---
 
+
 # 🔗 Resource Links
 
 The repository intentionally keeps the resource list centralized so links don't have to be maintained in multiple sections.
 
 ### 🧠 DSA
 
-* 📚 **Scott Barrett — Java DSA + LeetCode**
-* 🎬 **DSA Animator**
-* 🧩 **LeetCode 75**
-* 🧠 **NeetCode 150**
-* 💻 **NeetCode Core Skills**
+* 📚 [**Scott Barrett — Java DSA + LeetCode**](https://www.udemy.com/course/data-structures-and-algorithms-java/)
+* 🎬 [**DSA Animator**](https://www.dsaanimator.com/)
+* 🧩 [**LeetCode 75**](https://leetcode.com/studyplan/leetcode-75/)
+* 🧠 [**NeetCode 150**](https://neetcode.io/practice/practice/neetcode150)
+* 💻 [**NeetCode Core Skills**](https://neetcode.io/practice/practice/coreSkills)
 
 ### ⚡ Advanced DSA
 
-* 🎬 **DSA Animator**
-* 🧠 **NeetCode 150**
-* 💻 **NeetCode Core Skills**
+* 🎬 [**DSA Animator**](https://www.dsaanimator.com/)
+* 🧠 [**NeetCode 150**](https://neetcode.io/practice/practice/neetcode150)
+* 💻 [**NeetCode Core Skills**](https://neetcode.io/practice/practice/coreSkills)
 
 ### 🏗️ System Design
 
-* 🎬 **DSA Animator**
-* 📺 **ByteByteGo**
-* 🎓 **System Design Masterclass**
-* 🧱 **Low Level System Design — Java**
+* 🎬 [**DSA Animator**](https://www.dsaanimator.com/)
+* 📺 [**ByteByteGo**](https://bytebytego.com/)
+* 🎓 [**System Design Masterclass**](https://www.udemy.com/course/system-design-masterclass/)
+* 🧱 [**Low Level System Design — Java**](https://www.udemy.com/course/low-level-system-design-java-with-problem-solving/)
 
 ### 🎤 Interview Practice
 
-* 🧩 **LeetCode 75**
-* 🧠 **NeetCode 150**
-* 🎬 **DSA Animator**
-* 📺 **ByteByteGo**
+* 🧩 [**LeetCode 75**](https://leetcode.com/studyplan/leetcode-75/)
+* 🧠 [**NeetCode 150**](https://neetcode.io/practice/practice/neetcode150)
+* 🎬 [**DSA Animator**](https://www.dsaanimator.com/)
+* 📺 [**ByteByteGo**](https://bytebytego.com/)
 
 ---
 
