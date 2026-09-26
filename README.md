@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <em>Learn less. Practice more. Fix gaps. Build interview confidence.</em>
+  <em>Learn → Practice → Find Gaps → Fix → Re-solve → Master</em>
 </p>
 
 ---
@@ -14,43 +14,50 @@
 
 ```mermaid
 flowchart LR
-    A["🧠 DSA<br/>Problem Solving"] --> B["⚡ Advanced<br/>DSA"]
-    B --> C["🏗️ System<br/>Design"]
-    C --> D["🎤 Interviews"]
-    D --> E["🚀 Product<br/>Engineering"]
+    A["🧠 DSA<br/>Problem Solving"]
+    B["⚡ Advanced<br/>DSA"]
+    C["🏗️ System<br/>Design"]
+    D["🎤 Interview<br/>Readiness"]
+    E["🚀 Product<br/>Engineering"]
 
-    A -. "Java + LeetCode" .-> A
-    B -. "Patterns + Hard Problems" .-> B
+    A --> B --> C --> D --> E
+
+    A -. "Java + Patterns" .-> A
+    B -. "Advanced Techniques" .-> B
     C -. "HLD + LLD" .-> C
     D -. "Mocks + Follow-ups" .-> D
 ```
 
-### 🎯 The Rule
+### 🎯 Core Rule
 
-> **One primary resource → Practice → Find the gap → Fix only the gap → Re-solve → Master**
+> **One primary resource → Practice → Identify the gap → Fix the gap → Re-solve → Move on**
 
-No unnecessary course duplication.
+The goal is **skill development**, not collecting courses.
 
 ---
 
 # 🧠 01 · DSA + Problem Solving
 
-## 🔄 Learn → Visualize → Code → Solve
+## 🔄 Topic-by-Topic Learning Loop
 
 ```mermaid
 flowchart TD
-    A["📚 Learn Java DSA"] --> B["🎬 Visualize"]
+    A["📚 Learn Concept"] --> B["🎬 Visualize"]
     B --> C["💻 Implement in Java"]
-    C --> D["🧩 Solve LeetCode"]
+    C --> D["🧩 Solve Interview Problems"]
     D --> E{"Can solve independently?"}
-    E -->|YES| F["🔁 Re-solve"]
-    E -->|NO| G["🔧 NeetCode / Targeted Help"]
-    G --> C
-    F --> H["✅ Mastered"]
-    H --> I["➡️ Next Topic"]
+
+    E -->|YES| F["🔁 Re-solve Later"]
+    E -->|NO| G["🔍 Find the Gap"]
+
+    G --> H["NeetCode / AI / YouTube"]
+    H --> C
+
+    F --> I["✅ Topic Mastered"]
+    I --> J["➡️ Next Topic"]
 ```
 
-## 🗂️ Topic Journey
+### 🗂️ Topic Order
 
 ```text
 Arrays
@@ -73,7 +80,7 @@ Recursion
   ↓
 Trees & BST
   ↓
-Heap
+Heap / Priority Queue
   ↓
 Sorting
   ↓
@@ -92,77 +99,215 @@ Dynamic Programming
 Bit Manipulation
 ```
 
-### 🧰 Resource Roles
+### 🧩 Example: How One Topic Is Completed
 
-| 🎯 Resource                  | 🧩 Job                             |
-| ---------------------------- | ---------------------------------- |
-| **Scott Barrett — Java DSA** | Learn / revise concepts in Java    |
-| **DSA Animator**             | Visualize algorithms and execution |
-| **LeetCode 75**              | Main interview practice            |
-| **NeetCode 150**             | Repair weak patterns               |
-| **NeetCode Core Skills**     | Strengthen implementation          |
+```text
+ARRAYS
+  │
+  ├── 📚 Learn
+  │
+  ├── 🎬 Visualize
+  │
+  ├── 💻 Implement in Java
+  │
+  ├── 🧩 Solve LeetCode
+  │
+  ├── 🔍 Find weak patterns
+  │
+  ├── 🔧 Use NeetCode / AI / YouTube
+  │
+  ├── 🔁 Re-solve without help
+  │
+  └── ✅ Mark Arrays complete
+              ↓
+           STRINGS
+```
 
-> 💡 **Don't complete these resources one after another.**
-> Complete them **topic-by-topic**.
+> **Do not finish one entire resource before starting another.**
+>
+> Complete the resources **around each topic**.
 
 ---
 
 # ⚡ 02 · Advanced DSA
 
-## 🚫 No Separate Course Initially
-
-Use **DSA Animator + problem solving** first.
+Advanced DSA is an **extension of the DSA foundation**, not automatically another full course.
 
 ```mermaid
 flowchart LR
-    A["Learn"] --> B["Implement"]
-    B --> C["Practice"]
-    C --> D{"Weak?"}
-    D -->|No| E["➡️ Continue"]
-    D -->|Yes| F["🎯 Targeted Deep Dive"]
-    F --> C
+    A["Core DSA"] --> B["Harder Problems"]
+    B --> C{"Weak Technique?"}
+    C -->|NO| D["Continue"]
+    C -->|YES| E["🎯 Targeted Deep Dive"]
+    E --> B
+    D --> F["Advanced Problem Solving"]
 ```
 
 ### 🔥 Core Advanced Topics
 
-`Advanced Graphs` · `Dijkstra` · `Topological Sort` · `Union-Find` · `MST` · `Trie` · `Advanced DP` · `Monotonic Stack/Queue` · `Binary Search on Answer` · `Advanced Trees` · `Divide & Conquer` · `Advanced Greedy` · `Prefix Sum` · `Bit Manipulation`
+```text
+Advanced Graphs
+Dijkstra
+Topological Sort
+Union-Find / DSU
+Minimum Spanning Tree
+Advanced Dynamic Programming
+Trie
+Monotonic Stack / Queue
+Binary Search on Answer
+Advanced Trees
+Backtracking
+Divide & Conquer
+Advanced Greedy
+Prefix Sum
+Bit Manipulation
+```
 
-### 🧪 Selective
+### 🧪 Selective Topics
 
-`Segment Tree` · `Fenwick Tree` · `Advanced Range Queries`
+```text
+Segment Tree
+Fenwick Tree
+Advanced Range Queries
+```
 
-> **Only deep-dive when practice proves you need it.**
+> **Rule:** Don't study advanced topics just because they exist.
+>
+> Add them when interview practice or target roles show that you need them.
 
 ---
 
 # 🏗️ 03 · System Design
 
-## 🎬 Start With DSA Animator
+System Design has two tracks:
 
-```mermaid
-flowchart TB
-    A["🏗️ SYSTEM DESIGN"] --> B["HLD"]
-    A --> C["LLD"]
-
-    B --> B1["Requirements"]
-    B --> B2["Scale"]
-    B --> B3["API"]
-    B --> B4["Architecture"]
-    B --> B5["Database"]
-    B --> B6["Cache"]
-    B --> B7["Kafka / Messaging"]
-    B --> B8["Reliability"]
-    B --> B9["Trade-offs"]
-
-    C --> C1["OOP"]
-    C --> C2["SOLID"]
-    C --> C3["Design Patterns"]
-    C --> C4["Classes"]
-    C --> C5["Relationships"]
-    C --> C6["Java"]
+```text
+                    🏗️ SYSTEM DESIGN
+                           │
+                ┌──────────┴──────────┐
+                ↓                     ↓
+             🏢 HLD                 🧱 LLD
+                │                     │
+        Architecture              OOP
+        Scalability               SOLID
+        Databases                Patterns
+        Caching                  Classes
+        Messaging                Interfaces
+        Reliability              Relationships
+        Trade-offs               Java
 ```
 
-### 🧩 Practice Designs
+## 🏢 HLD Framework
+
+```mermaid
+flowchart LR
+    A["Requirements"]
+    B["Capacity / Scale"]
+    C["API"]
+    D["Architecture"]
+    E["Data"]
+    F["Cache"]
+    G["Messaging"]
+    H["Reliability"]
+    I["Observability"]
+    J["Trade-offs"]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> J
+```
+
+### Core HLD Topics
+
+```text
+Load Balancing
+API Gateway
+CDN
+Caching / Redis
+SQL / NoSQL
+Replication
+Partitioning
+Sharding
+Message Queues
+Kafka
+Search
+Rate Limiting
+Microservices
+Fault Tolerance
+Observability
+Consistency
+Availability
+Scalability
+Security
+```
+
+## 🧱 LLD Framework
+
+```mermaid
+flowchart TD
+    A["Requirements"] --> B["Entities"]
+    B --> C["Classes"]
+    C --> D["Relationships"]
+    D --> E["Interfaces"]
+    E --> F["SOLID"]
+    F --> G["Design Patterns"]
+    G --> H["Java Implementation"]
+    H --> I["Extensions"]
+```
+
+### Design Patterns
+
+```text
+Creational
+  Factory
+  Abstract Factory
+  Builder
+  Singleton
+  Prototype
+
+Structural
+  Adapter
+  Decorator
+  Facade
+  Composite
+  Proxy
+  Bridge
+
+Behavioral
+  Strategy
+  Observer
+  Command
+  State
+  Template Method
+  Chain of Responsibility
+  Iterator
+```
+
+---
+
+# 🧪 04 · System Design Practice
+
+Don't just watch system-design videos.
+
+Use this loop:
+
+```text
+Learn Concept
+     ↓
+Understand Architecture
+     ↓
+Design Yourself
+     ↓
+Compare With Reference
+     ↓
+Find Gaps
+     ↓
+Deep Dive
+     ↓
+Redesign
+     ↓
+Explain Out Loud
+```
+
+### 🏗️ Practice Systems
 
 ```text
 🔗 URL Shortener
@@ -177,47 +322,31 @@ flowchart TB
 🚕 Ride Sharing
 ```
 
-### 🧰 Resource Strategy
-
-**Primary**
-
-* 🎬 DSA Animator
-* 📺 ByteByteGo
-
-**Deep Dive — Only When Needed**
-
-* 🎓 System Design Masterclass
-* 🎓 Low Level System Design — Java
-
-> **Don't study every System Design resource completely.**
->
-> Start with DSA Animator → practice a design → identify the gap → deep-dive only that gap.
-
 ---
 
-# 🎤 04 · Interview Readiness
+# 🎤 05 · Interview Readiness
 
 ## 💻 Coding Interview
 
 ```text
-Problem
-   ↓
-Clarify
-   ↓
-Think
-   ↓
-Explain
-   ↓
+Understand Problem
+        ↓
+Clarify Requirements
+        ↓
+Think of Approaches
+        ↓
+Explain Approach
+        ↓
 Code
-   ↓
-Test
-   ↓
-Big-O
-   ↓
+        ↓
+Test Edge Cases
+        ↓
+Time & Space Complexity
+        ↓
 Follow-up
 ```
 
-## 🏗️ HLD Interview
+## 🏢 HLD Interview
 
 ```text
 Requirements
@@ -261,74 +390,100 @@ Java
 Extensions
 ```
 
-### 🎯 Final Simulation
+---
+
+# 🎤 06 · Mock Interview Loop
+
+```mermaid
+flowchart LR
+    A["🧩 Solve"] --> B["🎤 Explain"]
+    B --> C["⏱️ Time Yourself"]
+    C --> D["🔍 Review"]
+    D --> E["📝 Record Mistakes"]
+    E --> F["🔁 Re-solve"]
+    F --> A
+```
+
+### Interview Performance Checklist
 
 ```text
-        DSA
-         +
-        HLD
-         +
-        LLD
-         +
-   Java / Spring
-         ↓
-   🎤 Mock Interview
-         ↓
-   🔍 Review Mistakes
-         ↓
-   🔁 Repeat
+☐ Understand the problem
+☐ Ask useful clarifying questions
+☐ Explain before coding
+☐ Consider edge cases
+☐ Write clean Java
+☐ Test the solution
+☐ State Big-O
+☐ Handle follow-ups
+☐ Explain trade-offs
 ```
 
 ---
 
-# 🤖 05 · AI = Your Interview Coach
+# 🤖 07 · AI = Your Learning & Interview Coach
 
-### 🧠 DSA
+AI is a **support layer**, not a replacement for solving problems yourself.
+
+### 🧠 DSA Prompts
 
 ```text
 "Give me a hint only."
+
 "Don't give me the solution."
+
 "Review my approach."
-"Find my edge cases."
+
+"Find the missing edge cases."
+
 "Give me a similar problem."
+
+"Explain why my approach fails."
+
+"Interview me on this problem."
 ```
 
-### 🏗️ System Design
+### 🏗️ System Design Prompts
 
 ```text
-"Interview me."
+"Interview me on this design."
+
 "Don't give me the architecture."
+
 "Challenge my design."
+
 "Find scalability problems."
-"Ask senior follow-ups."
+
+"Ask senior-level follow-ups."
+
 "Review my trade-offs."
+
+"Tell me what I forgot."
 ```
 
-> **AI should improve your thinking — not replace it.**
+> **Use AI to improve your reasoning — not to replace it.**
 
 ---
 
-# 📚 06 · Resource Dashboard
+# 📚 08 · Resource Dashboard
 
-| Area           | 🥇 Primary                | 🔧 When to Add More        |
-| -------------- | ------------------------- | -------------------------- |
-| Java DSA       | Scott Barrett             | Concept unclear            |
-| Visualization  | DSA Animator              | Specific gap               |
-| Coding         | LeetCode 75               | Need more problems         |
-| Weak Patterns  | NeetCode 150              | Pattern weak               |
-| Implementation | NeetCode Core Skills      | Coding implementation weak |
-| Advanced DSA   | DSA Animator + Practice   | Specific advanced gap      |
-| HLD            | DSA Animator              | Concept/design gap         |
-| LLD            | DSA Animator              | Concept/design gap         |
-| HLD Visuals    | ByteByteGo                | Need visual explanation    |
-| Deep HLD       | System Design Masterclass | DSA Animator insufficient  |
-| Deep LLD       | LLD Java                  | DSA Animator insufficient  |
-| Interviews     | Timed Practice + Mocks    | Need simulation            |
-| AI             | AI Coach                  | Hints / review / practice  |
+| Area               | Primary Resource          | Add More Only When                       |
+| ------------------ | ------------------------- | ---------------------------------------- |
+| Java DSA           | Scott Barrett             | Concept is unclear                       |
+| Visualization      | DSA Animator              | Need another visual explanation          |
+| Core Problems      | LeetCode 75               | Need broader practice                    |
+| Pattern Practice   | NeetCode 150              | A pattern remains weak                   |
+| Implementation     | NeetCode Core Skills      | Data structure implementation is weak    |
+| Advanced DSA       | DSA Animator + Practice   | A specific advanced topic is weak        |
+| HLD                | DSA Animator + ByteByteGo | Architecture concept needs deeper study  |
+| LLD                | DSA Animator              | OOP / SOLID / patterns need deeper study |
+| Deep HLD           | System Design Masterclass | Specific HLD gap remains                 |
+| Deep LLD           | LLD resource              | Specific LLD gap remains                 |
+| Interview Practice | Timed Practice + Mocks    | Need interview simulation                |
+| AI                 | AI Coach                  | Need hints, review or simulation         |
 
 ---
 
-# 🧭 07 · The Daily Decision System
+# 🧭 09 · Daily Decision System
 
 Don't ask:
 
@@ -338,17 +493,66 @@ Ask:
 
 ```mermaid
 flowchart TD
-    A["What am I learning?"] --> B["Learn"]
-    B --> C["Can I explain it?"]
-    C -->|No| B
-    C -->|Yes| D["Can I implement it?"]
-    D -->|No| E["Practice Implementation"]
+    A["What topic am I learning?"] --> B["Learn"]
+    B --> C{"Can I explain it?"}
+
+    C -->|NO| B
+    C -->|YES| D{"Can I implement it?"}
+
+    D -->|NO| E["Practice Implementation"]
     E --> D
-    D -->|Yes| F["Can I solve problems?"]
-    F -->|No| G["Find Pattern / Hint"]
+
+    D -->|YES| F{"Can I solve problems?"}
+
+    F -->|NO| G["Find Pattern / Hint"]
     G --> F
-    F -->|Yes| H["Re-solve Later"]
-    H --> I["✅ Mastered"]
+
+    F -->|YES| H["Re-solve Later"]
+    H --> I["✅ Topic Complete"]
+```
+
+---
+
+# 📊 10 · Progress Tracking
+
+Track **skills**, not just videos.
+
+```text
+DSA
+├── Arrays             ☐
+├── Strings            ☐
+├── Hashing            ☐
+├── Linked List        ☐
+├── Trees              ☐
+├── Graphs             ☐
+└── Dynamic Programming ☐
+
+Advanced DSA
+├── Dijkstra           ☐
+├── Union-Find         ☐
+├── Topological Sort   ☐
+├── Advanced DP        ☐
+└── Monotonic Stack    ☐
+
+System Design
+├── HLD Fundamentals   ☐
+├── Databases          ☐
+├── Caching             ☐
+├── Messaging           ☐
+├── Scalability         ☐
+└── Reliability         ☐
+
+LLD
+├── OOP                 ☐
+├── SOLID               ☐
+├── Design Patterns     ☐
+└── Machine Coding      ☐
+
+Interview
+├── Coding Mocks        ☐
+├── HLD Mocks           ☐
+├── LLD Mocks           ☐
+└── Follow-ups          ☐
 ```
 
 ---
@@ -356,33 +560,33 @@ flowchart TD
 # 🏆 Final Philosophy
 
 ```text
-             ┌─────────────────┐
-             │      LEARN      │
-             └────────┬────────┘
-                      ↓
-             ┌─────────────────┐
-             │    PRACTICE     │
-             └────────┬────────┘
-                      ↓
-             ┌─────────────────┐
-             │   FIND THE GAP  │
-             └────────┬────────┘
-                      ↓
-             ┌─────────────────┐
-             │   FIX THE GAP   │
-             └────────┬────────┘
-                      ↓
-             ┌─────────────────┐
-             │    RE-SOLVE     │
-             └────────┬────────┘
-                      ↓
-             ┌─────────────────┐
-             │     MASTER      │
-             └────────┬────────┘
-                      ↓
-             ┌─────────────────┐
-             │    INTERVIEW    │
-             └─────────────────┘
+        ┌───────────────┐
+        │     LEARN     │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │    PRACTICE   │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │  FIND THE GAP │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │   FIX THE GAP │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │   RE-SOLVE    │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │    MASTER     │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │   INTERVIEW   │
+        └───────────────┘
 ```
 
 ## 🚀 Don't Collect Courses. Build Skills.
@@ -391,9 +595,11 @@ flowchart TD
 
 ---
 
-### 🔗 Resource Links
+## 🔗 Resource Links
 
-**DSA**
+The repository intentionally keeps the resource list centralized so links don't have to be maintained in multiple sections.
+
+### 🧠 DSA
 
 * Scott Barrett — Java DSA + LeetCode
 * DSA Animator
@@ -401,9 +607,15 @@ flowchart TD
 * NeetCode 150
 * NeetCode Core Skills
 
-**System Design**
+### 🏗️ System Design
 
 * DSA Animator
 * ByteByteGo
-* System Design Masterclass — Udemy
-* Low Level System Design — Java — Udemy
+* System Design Masterclass
+* Low Level System Design — Java
+
+---
+
+<p align="center">
+  <strong>Build the fundamentals. Practice deliberately. Fix your gaps. Think like an engineer.</strong>
+</p>
