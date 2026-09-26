@@ -595,24 +595,37 @@ Interview
 
 ---
 
-## 🔗 Resource Links
+# 🔗 Resource Links
 
 The repository intentionally keeps the resource list centralized so links don't have to be maintained in multiple sections.
 
 ### 🧠 DSA
 
-* Scott Barrett — Java DSA + LeetCode
-* DSA Animator
-* LeetCode 75
-* NeetCode 150
-* NeetCode Core Skills
+* 📚 **Scott Barrett — Java DSA + LeetCode**
+* 🎬 **DSA Animator**
+* 🧩 **LeetCode 75**
+* 🧠 **NeetCode 150**
+* 💻 **NeetCode Core Skills**
+
+### ⚡ Advanced DSA
+
+* 🎬 **DSA Animator**
+* 🧠 **NeetCode 150**
+* 💻 **NeetCode Core Skills**
 
 ### 🏗️ System Design
 
-* DSA Animator
-* ByteByteGo
-* System Design Masterclass
-* Low Level System Design — Java
+* 🎬 **DSA Animator**
+* 📺 **ByteByteGo**
+* 🎓 **System Design Masterclass**
+* 🧱 **Low Level System Design — Java**
+
+### 🎤 Interview Practice
+
+* 🧩 **LeetCode 75**
+* 🧠 **NeetCode 150**
+* 🎬 **DSA Animator**
+* 📺 **ByteByteGo**
 
 ---
 
